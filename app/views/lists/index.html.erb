@@ -1,0 +1,32 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+url(https://source.unsplash.com/featured/?movie);">
+  <div class="container">
+    <h1>Pass Time brings <strong>Good Times</strong> to <strong>your homes</strong>!</h1>
+    <p>Enjoy your life watching new releases, classicals, top-rated movies around the world.</p>
+    <a class="btn btn-flat" href="#">Join the millions of viewers</a>
+  </div>
+</div>
+  <a class="btn btn-ghost" href="#">Watch a movie</a>
+  <a class="btn btn-flat" href="#">save it for later</a>
+  <a class="btn btn-gradient" href="#">Sign In</a>
+
+  <div class="container">
+
+<%  @lists.each do |list| %>
+
+  <div class="card-product mt-3">
+
+    <img src="https://source.unsplash.com/featured/?movie" />
+    <div class="card-product-infos">
+
+      <h2><%= list.name %></h2>
+      <p> Newest Release <strong>With Top Actors and Actresses  </strong>Highly Demand Movies</p>
+    </div>
+  </div>
+
+
+
+<% end %>
+</div>
+
+
